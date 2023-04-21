@@ -82,6 +82,7 @@ with DAG(
         task_id='print_to_console',
         python_callable=print_file,
         provide_context=True,
+        trigger_rule='all_done',
         dag=dag,
     )
 
